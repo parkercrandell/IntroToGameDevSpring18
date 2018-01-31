@@ -20,7 +20,10 @@ public class WordScript : MonoBehaviour {
 	void Update () {
         if(WordTyped())
         {
-            
+            foreach(KeyScript kS in myKeys)
+            {
+                kS.HideSprite();
+            }
         }
 		
 	}
@@ -28,7 +31,7 @@ public class WordScript : MonoBehaviour {
     bool WordTyped () {
         foreach(KeyScript kS in myKeys)
         {
-            if (!(kS.getKeyHeld())){
+            if (!(kS.GetKeyHeld())){
                 return false;
             }
         }

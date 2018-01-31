@@ -9,6 +9,7 @@ public class KeyScript : MonoBehaviour {
     public bool keyHeld = false;
     public SpriteRenderer mySpriteRenderer;
     public float maxTimer = 1.5f;
+    public Sprite nA;
 
 	// Use this for initializatewion
 	void Start () {
@@ -41,7 +42,13 @@ public class KeyScript : MonoBehaviour {
 
 
     }
-    public bool getKeyHeld() {
+
+    public bool GetKeyHeld() {
         return keyHeld;
+    }
+     
+    public void HideSprite()
+    {
+        mySpriteRenderer.sprite = nA;
     }
 }
