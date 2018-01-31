@@ -12,6 +12,7 @@ public class KeyScript : MonoBehaviour {
 
 	// Use this for initializatewion
 	void Start () {
+        transform.position = new Vector3(transform.position.x, 6.5f +(Random.value * 0.50f), transform.position.z);
         mySpriteRenderer = GetComponent<SpriteRenderer>();
 	}
 
@@ -39,5 +40,8 @@ public class KeyScript : MonoBehaviour {
         }
 
 
+    }
+    public bool getKeyHeld() {
+        return keyHeld;
     }
 }
