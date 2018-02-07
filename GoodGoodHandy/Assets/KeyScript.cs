@@ -10,9 +10,10 @@ public class KeyScript : MonoBehaviour {
     public SpriteRenderer mySpriteRenderer;
     public float maxTimer = 1.5f;
     public Sprite nA;
-
+    public float yValue;
+  
 	void Start () {
-        transform.position = new Vector3(transform.position.x, 6.5f + (Random.value * 0.50f), transform.position.z);
+        transform.position = new Vector3(transform.position.x, yValue + (Random.value * 0.50f), transform.position.z);
         mySpriteRenderer = GetComponent<SpriteRenderer>();
 	}
 

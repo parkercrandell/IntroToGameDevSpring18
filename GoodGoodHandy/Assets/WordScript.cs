@@ -7,6 +7,10 @@ public class WordScript : MonoBehaviour {
     private List<KeyScript> myKeys;
     public bool typed = false;
     public bool missed = false;
+    public GameObject mySceneScript;
+    public float offset;
+    
+    
 	
 	void Start () {
         myKeys = new List<KeyScript>();
@@ -15,7 +19,7 @@ public class WordScript : MonoBehaviour {
             myKeys.Add(transform.GetChild(i).GetComponent<KeyScript>());
         }
 
-        transform.position = new Vector3(transform.position.x, 6.5f, transform.position.z);
+        transform.position = new Vector3(transform.position.x, 6.5f + offset, transform.position.z);
     }
 
 
@@ -53,6 +57,10 @@ public class WordScript : MonoBehaviour {
     {
         if ((transform.position.y < -4.5) && !typed)
         {
+            if (!missed)
+            {
+                mySceneScript.GetComponent<SceneScript>().ReduceHealth();
+            }
             return true;
         }
         return false;
