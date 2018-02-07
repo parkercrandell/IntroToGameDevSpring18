@@ -11,13 +11,11 @@ public class KeyScript : MonoBehaviour {
     public float maxTimer = 1.5f;
     public Sprite nA;
 
-	// Use this for initializatewion
 	void Start () {
-        transform.position = new Vector3(transform.position.x, 6.5f +(Random.value * 0.50f), transform.position.z);
+        transform.position = new Vector3(transform.position.x, 6.5f + (Random.value * 0.50f), transform.position.z);
         mySpriteRenderer = GetComponent<SpriteRenderer>();
 	}
 
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetKey(SetKey))

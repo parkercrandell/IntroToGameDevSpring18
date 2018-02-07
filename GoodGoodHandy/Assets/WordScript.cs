@@ -5,6 +5,8 @@ using UnityEngine;
 public class WordScript : MonoBehaviour {
 
     private List<KeyScript> myKeys;
+    public bool typed = false;
+    public bool missed = false;
 	
 	void Start () {
         myKeys = new List<KeyScript>();
@@ -15,26 +17,44 @@ public class WordScript : MonoBehaviour {
 
         transform.position = new Vector3(transform.position.x, 6.5f, transform.position.z);
     }
-	
-	
-	void Update () {
-        if(WordTyped())
+
+
+    void Update()
+    {
+        if (WordTyped())
         {
-            foreach(KeyScript kS in myKeys)
+            foreach (KeyScript kS in myKeys)
             {
                 kS.HideSprite();
-            }
-        }
-		
-	}
+                typed = true;
 
-    bool WordTyped () {
-        foreach(KeyScript kS in myKeys)
-        {
-            if (!(kS.GetKeyHeld())){
-                return false;
             }
+        }else if(WordMissed())
+        {
+            missed = true;
         }
-        return true;
+
+        
+    }
+
+    bool WordTyped()
+    {
+            foreach (KeyScript kS in myKeys)
+            {
+                if (!(kS.GetKeyHeld()))
+                {
+                    return false;
+                }
+            }
+            return true;
+    }
+
+    bool WordMissed ()
+    {
+        if ((transform.position.y < -4.5) && !typed)
+        {
+            return true;
+        }
+        return false;
     }
 }
