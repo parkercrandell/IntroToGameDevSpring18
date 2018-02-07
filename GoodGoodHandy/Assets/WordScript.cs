@@ -8,7 +8,6 @@ public class WordScript : MonoBehaviour {
     public bool typed = false;
     public bool missed = false;
     public GameObject mySceneScript;
-    public float offset;
     
     
 	
@@ -19,7 +18,7 @@ public class WordScript : MonoBehaviour {
             myKeys.Add(transform.GetChild(i).GetComponent<KeyScript>());
         }
 
-        transform.position = new Vector3(transform.position.x, 6.5f + offset, transform.position.z);
+        transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z);
     }
 
 

@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4488001838636934}
   - component: {fileID: 212952790654284398}
   - component: {fileID: 50814994402672372}
+  - component: {fileID: 114727941623229286}
   m_Layer: 0
   m_Name: Word
   m_TagString: Untagged
@@ -61,6 +62,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &114727941623229286
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1956077361520958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 942bda9dffbf3804199bebadb81b991f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  typed: 0
+  missed: 0
+  mySceneScript: {fileID: 1793203070083400, guid: a014abe03fa005848a59beb0c58b953a,
+    type: 2}
 --- !u!212 &212952790654284398
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -95,13 +111,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 10917, guid: 0000000000000000f000000000000000, type: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.16, y: 0.16}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
