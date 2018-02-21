@@ -15,9 +15,9 @@ public class SceneScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (health < 0)
+        if (health < 1)
         {
-            healthText.text = " YOU SUCK. YOURE GOING TO DIE POOR AND A FAILURE.";
+            healthText.text = "YOU LOSE";
         }
         else
         {

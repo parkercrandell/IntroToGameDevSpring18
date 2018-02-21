@@ -10,7 +10,6 @@ public class KeyScript : MonoBehaviour {
     public SpriteRenderer mySpriteRenderer;
     public float maxTimer = 1.5f;
     public Sprite nA;
-    
   
 	void Start () {
         transform.position = new Vector3(transform.position.x, transform.position.y + (Random.value * 0.50f), transform.position.z);
@@ -19,10 +18,11 @@ public class KeyScript : MonoBehaviour {
 
     void Update()
     {
-        if (Input.GetKey(SetKey))
+        if (Input.GetKey(SetKey) && transform.position.y < 5)
         {
             Debug.Log(keyHeld);
             timer = timer + Time.deltaTime;
+            mySpriteRenderer.color = Color.Lerp(Color.white, Color.green, timer);
             if (timer > maxTimer)
             {
                 keyHeld = true;
@@ -31,6 +31,7 @@ public class KeyScript : MonoBehaviour {
         else
         {
             timer = 0;
+            mySpriteRenderer.color = Color.white;
             keyHeld = false;
         }
 

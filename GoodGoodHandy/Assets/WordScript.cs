@@ -8,6 +8,7 @@ public class WordScript : MonoBehaviour {
     public bool typed = false;
     public bool missed = false;
     public GameObject mySceneScript;
+    public float fallSpeed = 0.3f;
     
     
 	
@@ -24,6 +25,7 @@ public class WordScript : MonoBehaviour {
 
     void Update()
     {
+        transform.position += new Vector3(0, -fallSpeed, 0);
         if (WordTyped())
         {
             foreach (KeyScript kS in myKeys)
@@ -54,7 +56,7 @@ public class WordScript : MonoBehaviour {
 
     bool WordMissed ()
     {
-        if ((transform.position.y < -4.5) && !typed)
+        if ((transform.position.y < -8) && !typed)
         {
             if (!missed)
             {
