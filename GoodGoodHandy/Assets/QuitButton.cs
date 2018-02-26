@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class QuitButtonScript : MonoBehaviour
+public class QuitButton : MonoBehaviour
 {
 
     private List<KeyScript> myKeys;

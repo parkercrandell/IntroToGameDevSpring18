@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class SceneScript : MonoBehaviour {
     public int health = 3;
@@ -18,6 +19,7 @@ public class SceneScript : MonoBehaviour {
         if (health < 1)
         {
             healthText.text = "YOU LOSE";
+            SceneManager.LoadScene("LossMenu");
         }
         else
         {

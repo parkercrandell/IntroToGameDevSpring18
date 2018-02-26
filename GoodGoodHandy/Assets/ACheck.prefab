@@ -56,7 +56,7 @@ MonoBehaviour:
   SetKey: 99
   keyHeld: 0
   mySpriteRenderer: {fileID: 212439424829752426}
-  maxTimer: 1.5
+  maxTimer: 0.8
   nA: {fileID: 0}
 --- !u!212 &212439424829752426
 SpriteRenderer:
