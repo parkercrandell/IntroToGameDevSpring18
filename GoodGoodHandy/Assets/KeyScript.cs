@@ -5,16 +5,20 @@ using UnityEngine;
 public class KeyScript : MonoBehaviour {
 
     public float timer = 0;
+    public Sprite baseSprite;
     public KeyCode SetKey;
     public bool keyHeld = false;
     public SpriteRenderer mySpriteRenderer;
     public float maxTimer = 1.5f;
     public Sprite nA;
     public Color initialColor;
+    public bool keyDone;
   
 	void Start () {
+        keyDone = false;
         transform.position = new Vector3(transform.position.x, transform.position.y + (Random.value * 0.50f), transform.position.z);
         mySpriteRenderer = GetComponent<SpriteRenderer>();
+        baseSprite = mySpriteRenderer.sprite;
         initialColor = new Color(207f, 255f, 207f, 1f);
         //WHYDONTTHESECOLORVARIABLESWORK
     }
@@ -34,19 +38,27 @@ public class KeyScript : MonoBehaviour {
         {
 
             timer = timer + Time.deltaTime;
-            //mySpriteRenderer.color = initialColor;
-            transform.position = new Vector3(transform.position.x, transform.position.y + ((Random.value * 0.2f)-0.1f), transform.position.z);
-            //mySpriteRenderer.color = Color.Lerp(Color.blue, Color.green, timer);
+            if (!keyDone)
+            {
+                transform.position = new Vector3(transform.position.x, transform.position.y + ((Random.value * 0.2f) - 0.1f), transform.position.z);
+            }
+
             if (timer > maxTimer)
             {
                 keyHeld = true;
-                //mySpriteRenderer.color = Color.green;
+                mySpriteRenderer.sprite = nA;
+              
+            }
+            else
+            {
+                mySpriteRenderer.sprite = baseSprite;
             }
         }
         else
         {
             timer = 0;
-            //mySpriteRenderer.color = Color.white;
+            
+            mySpriteRenderer.sprite = baseSprite;
             keyHeld = false;
         }
     }
@@ -57,6 +69,7 @@ public class KeyScript : MonoBehaviour {
      
     public void HideSprite()
     {
-        mySpriteRenderer.sprite = nA;
+        baseSprite = nA;
+        keyDone = true;
     }
 }
