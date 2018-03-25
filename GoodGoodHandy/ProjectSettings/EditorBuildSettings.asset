@@ -14,6 +14,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/LossMenu.unity
     guid: abc7f410e66adce4ab0f610df609a10a
-  - enabled: 1
+  - enabled: 0
     path: Assets/Lv2.unity
     guid: 102e50057d5c389428b3c0b1b9b67c3c

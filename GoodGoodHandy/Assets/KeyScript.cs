@@ -10,37 +10,45 @@ public class KeyScript : MonoBehaviour {
     public SpriteRenderer mySpriteRenderer;
     public float maxTimer = 1.5f;
     public Sprite nA;
+    public Color initialColor;
   
 	void Start () {
         transform.position = new Vector3(transform.position.x, transform.position.y + (Random.value * 0.50f), transform.position.z);
         mySpriteRenderer = GetComponent<SpriteRenderer>();
-	}
+        initialColor = new Color(207f, 255f, 207f, 1f);
+        //WHYDONTTHESECOLORVARIABLESWORK
+    }
 
     void Update()
     {
-        if (Input.GetKey(SetKey) && transform.position.y < 5)
+        if (Input.GetKeyDown(SetKey))
         {
-            Debug.Log(keyHeld);
+            transform.position = new Vector3(transform.position.x, transform.position.y + (0.5f), transform.position.z);
+        }
+        if (Input.GetKeyUp(SetKey))
+        {
+            transform.position = new Vector3(transform.position.x, transform.position.y - (0.5f), transform.position.z);
+        }
+
+        if (Input.GetKey(SetKey) && transform.position.y < 11)
+        {
+
             timer = timer + Time.deltaTime;
-            mySpriteRenderer.color = Color.Lerp(Color.white, Color.green, timer);
+            //mySpriteRenderer.color = initialColor;
+            transform.position = new Vector3(transform.position.x, transform.position.y + ((Random.value * 0.2f)-0.1f), transform.position.z);
+            //mySpriteRenderer.color = Color.Lerp(Color.blue, Color.green, timer);
             if (timer > maxTimer)
             {
                 keyHeld = true;
+                //mySpriteRenderer.color = Color.green;
             }
         }
         else
         {
             timer = 0;
-            mySpriteRenderer.color = Color.white;
+            //mySpriteRenderer.color = Color.white;
             keyHeld = false;
         }
-
-        if (keyHeld)
-        {
-            mySpriteRenderer.color = Color.green;
-        }
-
-
     }
 
     public bool GetKeyHeld() {

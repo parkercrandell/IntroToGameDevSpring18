@@ -56,7 +56,7 @@ MonoBehaviour:
   missed: 0
   mySceneScript: {fileID: 1793203070083400, guid: a014abe03fa005848a59beb0c58b953a,
     type: 2}
-  fallSpeed: 0.08
+  fallSpeed: 0.06
 --- !u!212 &212952790654284398
 SpriteRenderer:
   m_ObjectHideFlags: 1

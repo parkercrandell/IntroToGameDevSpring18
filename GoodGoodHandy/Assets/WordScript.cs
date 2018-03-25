@@ -25,7 +25,7 @@ public class WordScript : MonoBehaviour {
 
     void Update()
     {
-        transform.position += new Vector3(0, -fallSpeed, 0);
+        transform.position += new Vector3(0, (-fallSpeed * Time.deltaTime), 0);
         if (WordTyped())
         {
             foreach (KeyScript kS in myKeys)
