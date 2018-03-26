@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class SceneScript : MonoBehaviour {
-    public int health = 3;
+    public int health = 5;
     public Text healthText;
     public GameObject ScreenText;
 

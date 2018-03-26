@@ -9,10 +9,12 @@ public class WordScript : MonoBehaviour {
     public bool missed = false;
     public GameObject mySceneScript;
     public float fallSpeed = 0.3f;
+    public SpriteRenderer mySprite;
     
     
 	
 	void Start () {
+        mySprite = GetComponent<SpriteRenderer>();
         myKeys = new List<KeyScript>();
         for (int i = 0; i < transform.childCount; i++)
         {
@@ -37,6 +39,11 @@ public class WordScript : MonoBehaviour {
         }else if(WordMissed())
         {
             missed = true;
+            foreach (KeyScript kS in myKeys)
+            {
+                kS.HideSprite();
+                kS.MissSprite();
+            }
         }
 
         
