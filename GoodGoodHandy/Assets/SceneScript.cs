@@ -9,7 +9,7 @@ public class SceneScript : MonoBehaviour {
     public Text healthText;
     public GameObject ScreenText;
 
-	// Use this for initialization
+	
 	void Start () {
         healthText.text = "" + health;
 	}

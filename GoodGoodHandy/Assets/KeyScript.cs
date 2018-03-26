@@ -9,24 +9,27 @@ public class KeyScript : MonoBehaviour {
     public KeyCode SetKey;
     public bool keyHeld = false;
     public SpriteRenderer mySpriteRenderer;
+    public AudioSource myAudio;
     public float maxTimer = 1.5f;
     public Sprite nA;
-    public Color initialColor;
     public bool keyDone;
-  
+    public AudioClip initTear;
+    public AudioClip followTear;
+
 	void Start () {
         keyDone = false;
         transform.position = new Vector3(transform.position.x, transform.position.y + (Random.value * 0.50f), transform.position.z);
         mySpriteRenderer = GetComponent<SpriteRenderer>();
+        myAudio = GetComponent<AudioSource>();
         baseSprite = mySpriteRenderer.sprite;
-        initialColor = new Color(207f, 255f, 207f, 1f);
-        //WHYDONTTHESECOLORVARIABLESWORK
     }
 
     void Update()
     {
         if (Input.GetKeyDown(SetKey))
         {
+            myAudio.PlayOneShot(initTear, 1f);
+
             transform.position = new Vector3(transform.position.x, transform.position.y + (0.5f), transform.position.z);
         }
         if (Input.GetKeyUp(SetKey))
@@ -45,9 +48,13 @@ public class KeyScript : MonoBehaviour {
 
             if (timer > maxTimer)
             {
+                if (!keyHeld)
+                {
+                    myAudio.PlayOneShot(followTear, 1f);
+                }
                 keyHeld = true;
                 mySpriteRenderer.sprite = nA;
-              
+                
             }
             else
             {
@@ -63,7 +70,8 @@ public class KeyScript : MonoBehaviour {
         }
     }
 
-    public bool GetKeyHeld() {
+    public bool GetKeyHeld()
+    {
         return keyHeld;
     }
      
@@ -72,4 +80,5 @@ public class KeyScript : MonoBehaviour {
         baseSprite = nA;
         keyDone = true;
     }
+
 }
