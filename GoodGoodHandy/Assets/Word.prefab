@@ -57,8 +57,8 @@ MonoBehaviour:
   missed: 0
   mySceneScript: {fileID: 1793203070083400, guid: a014abe03fa005848a59beb0c58b953a,
     type: 2}
-  fallSpeed: 2.5
-  fastFallSpeed: 0
+  fallSpeed: 3
+  fastFallSpeed: 6
   enteranceYPos: 11
   missYPos: -8
   mySprite: {fileID: 0}

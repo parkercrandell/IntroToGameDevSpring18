@@ -239,6 +239,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timer: 0
   isFast: 0
+  fastMaxTimer: 0.4
   baseSprite: {fileID: 0}
   SetKey: 105
   keyHeld: 0
@@ -316,7 +317,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 30baedfe9bc39674f9d528fa0ba9736f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a1558391270481543a466e35a764ff11, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -360,7 +361,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 1e1bfdea5cd563b449b94df6b1138ee2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8b2e7d43ed448b04ab70d9e27fbad4e9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -404,7 +405,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 2e52cafdcba69d34c961ccc264d3ca58, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 03812b4d07805034cbac18175c365381, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

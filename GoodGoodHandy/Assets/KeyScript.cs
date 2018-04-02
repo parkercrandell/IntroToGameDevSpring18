@@ -6,6 +6,7 @@ public class KeyScript : MonoBehaviour {
 
     public float timer = 0;
     public bool isFast;
+    public float fastMaxTimer = 0.4f;
     public Sprite baseSprite;
     public KeyCode SetKey;
     public bool keyHeld = false;
@@ -30,8 +31,14 @@ public class KeyScript : MonoBehaviour {
 
     void Update()
     {
+        //IF FAST CHANGE THE LENGTH REQUIRED TO HOLD LETTER
+        if (isFast)
+        {
+            maxTimer = fastMaxTimer;
+        }
+
         //INITIAl PRESS ANIMATION & SOUND
-        if (Input.GetKeyDown(SetKey) && transform.position.y < 11)
+        if (Input.GetKeyDown(SetKey) && transform.position.y < enteranceYPos)
         {
             if (!wordDone)
             {
@@ -40,13 +47,13 @@ public class KeyScript : MonoBehaviour {
 
             transform.position = new Vector3(transform.position.x, transform.position.y + (0.5f), transform.position.z);
         }
-        if (Input.GetKeyUp(SetKey) && transform.position.y < 11)
+        if (Input.GetKeyUp(SetKey) && transform.position.y < enteranceYPos)
         {
             transform.position = new Vector3(transform.position.x, transform.position.y - (0.5f), transform.position.z);
         }
 
         //CHECKING IF KEY IS HELD
-        if (Input.GetKey(SetKey) && transform.position.y < 11)
+        if (Input.GetKey(SetKey) && transform.position.y < enteranceYPos)
         {
 
             timer = timer + Time.deltaTime;
