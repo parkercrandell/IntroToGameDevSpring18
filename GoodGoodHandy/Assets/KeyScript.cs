@@ -5,6 +5,7 @@ using UnityEngine;
 public class KeyScript : MonoBehaviour {
 
     public float timer = 0;
+    public bool isFast;
     public Sprite baseSprite;
     public KeyCode SetKey;
     public bool keyHeld = false;
@@ -16,8 +17,10 @@ public class KeyScript : MonoBehaviour {
     public bool wordMissed = false;
     public AudioClip initTear;
     public AudioClip followTear;
+    public float enteranceYPos = 11;
+    public float missYPos = -8;
 
-	void Start () {
+    void Start () {
         wordDone = false;
         transform.position = new Vector3(transform.position.x, transform.position.y + (Random.value * 0.50f), transform.position.z);
         mySpriteRenderer = GetComponent<SpriteRenderer>();
@@ -62,8 +65,7 @@ public class KeyScript : MonoBehaviour {
                 }
                 //REGISTERS KEY AS HELD AND HIDES SPRITE TO SHOW TEAR
                 keyHeld = true;
-                mySpriteRenderer.sprite = nA;
-                
+                mySpriteRenderer.sprite = nA;               
             }           
         }
         else
@@ -93,5 +95,14 @@ public class KeyScript : MonoBehaviour {
     {
         //GETTING CALLED FROM WORD
         wordMissed = true;
+    }
+    public void setFast(bool x)
+    {
+        isFast = x;
+    }
+
+    public void setYEnteranceYFailure(bool x)
+    {
+        isFast = x;
     }
 }

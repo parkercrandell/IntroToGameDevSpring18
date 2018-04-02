@@ -52,11 +52,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 942bda9dffbf3804199bebadb81b991f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isFast: 0
   typed: 0
   missed: 0
   mySceneScript: {fileID: 1793203070083400, guid: a014abe03fa005848a59beb0c58b953a,
     type: 2}
-  fallSpeed: 0.06
+  fallSpeed: 2.5
+  fastFallSpeed: 0
+  enteranceYPos: 11
+  missYPos: -8
+  mySprite: {fileID: 0}
 --- !u!212 &212952790654284398
 SpriteRenderer:
   m_ObjectHideFlags: 1

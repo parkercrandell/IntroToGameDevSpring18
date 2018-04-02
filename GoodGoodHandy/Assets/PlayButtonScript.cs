@@ -32,8 +32,6 @@ public class PlayButtonScript : MonoBehaviour
 
             }
         }
-
-
     }
 
     bool WordTyped()
