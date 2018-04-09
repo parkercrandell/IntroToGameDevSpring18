@@ -33,6 +33,7 @@ public class WordScript : MonoBehaviour {
 
     void Update()
     {
+        //CHANGING THE TYPE OF LEVEL
         if (isFast && (transform.position.y < enteranceYPos))
         {
             defaultSpeed = fastFallSpeed;
