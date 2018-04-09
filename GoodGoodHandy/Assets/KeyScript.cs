@@ -38,7 +38,7 @@ public class KeyScript : MonoBehaviour {
         }
 
         //INITIAl PRESS ANIMATION & SOUND
-        if (Input.GetKeyDown(SetKey) && transform.position.y < enteranceYPos)
+        if (Input.GetKeyDown(SetKey) && transform.position.y < enteranceYPos && transform.position.y > missYPos)
         {
             if (!wordDone)
             {

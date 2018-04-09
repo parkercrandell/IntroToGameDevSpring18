@@ -9,6 +9,7 @@ public class WordScript : MonoBehaviour {
     public bool typed = false;
     public bool missed = false;
     public GameObject mySceneScript;
+    public float defaultSpeed = 2.5f;
     public float fallSpeed;
     public float fastFallSpeed;
     public float enteranceYPos = 11;
@@ -34,9 +35,13 @@ public class WordScript : MonoBehaviour {
     {
         if (isFast && (transform.position.y < enteranceYPos))
         {
-            fallSpeed = fastFallSpeed;
+            defaultSpeed = fastFallSpeed;
+        }else if(transform.position.y < enteranceYPos)
+        {
+            defaultSpeed = fallSpeed;
         }
-        transform.position += new Vector3(0, (-fallSpeed * Time.deltaTime), 0);
+
+        transform.position += new Vector3(0, (-defaultSpeed * Time.deltaTime), 0);
         if (WordTyped())
         {
             foreach (KeyScript kS in myKeys)
