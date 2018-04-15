@@ -38,6 +38,12 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: bg
+    uniqueID: 2936116781
+    locked: 0
+  - name: bgblood
+    uniqueID: 2317068357
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
