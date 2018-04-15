@@ -16,6 +16,8 @@ public class WordScript : MonoBehaviour {
     public float missYPos = -8;
     
     public SpriteRenderer mySprite;
+
+	ParticleSystem bloodSplatter; //bloodSplatter when you miss a word
     
     
 	
@@ -28,6 +30,8 @@ public class WordScript : MonoBehaviour {
         }
         SetKeysToFast(isFast);
         transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z);
+
+		bloodSplatter = GetComponent<ParticleSystem> (); //gets particle system
     }
 
 
@@ -84,6 +88,8 @@ public class WordScript : MonoBehaviour {
             if (!missed)
             {
                 mySceneScript.GetComponent<SceneScript>().ReduceHealth();
+
+				bloodSplatter.Play (); //plays splatter when you miss
             }
             return true;
         }
