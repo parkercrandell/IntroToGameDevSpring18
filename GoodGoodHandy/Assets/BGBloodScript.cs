@@ -6,11 +6,11 @@ public class BGBloodScript : MonoBehaviour {
 
 	SpriteRenderer spriteRend;
 
+
 	Color bloodColor = new Color(255,255,255,200);
 
 	void Start() {
 		spriteRend = GetComponent<SpriteRenderer> ();
-
 		spriteRend.color = new Color (255,255,255,0);
 	}
 

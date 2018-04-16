@@ -286,7 +286,7 @@ SpriteRenderer:
   m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 3070d1d25304bc247b6741a2bf959796, type: 3}
-  m_Color: {r: 0.8308824, g: 0.6231618, b: 0.6231618, a: 0.7058824}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.78431374}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -806,7 +806,7 @@ SpriteRenderer:
   m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 3070d1d25304bc247b6741a2bf959796, type: 3}
-  m_Color: {r: 0.8308824, g: 0.6231618, b: 0.6231618, a: 0.7058824}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.78431374}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -882,17 +882,17 @@ Prefab:
     - target: {fileID: 20757093437985986, guid: a014abe03fa005848a59beb0c58b953a,
         type: 2}
       propertyPath: m_BackGroundColor.r
-      value: 0.61764705
+      value: 0.30147058
       objectReference: {fileID: 0}
     - target: {fileID: 20757093437985986, guid: a014abe03fa005848a59beb0c58b953a,
         type: 2}
       propertyPath: m_BackGroundColor.g
-      value: 0.12716264
+      value: 0.03325043
       objectReference: {fileID: 0}
     - target: {fileID: 20757093437985986, guid: a014abe03fa005848a59beb0c58b953a,
         type: 2}
       propertyPath: m_BackGroundColor.b
-      value: 0.12716264
+      value: 0.03325043
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a014abe03fa005848a59beb0c58b953a, type: 2}
@@ -1015,7 +1015,7 @@ ParticleSystem:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 247733931}
   serializedVersion: 5
-  lengthInSec: 1
+  lengthInSec: 0.5
   simulationSpeed: 1
   stopAction: 0
   looping: 0
@@ -5554,7 +5554,7 @@ ParticleSystem:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 559403058}
   serializedVersion: 5
-  lengthInSec: 1
+  lengthInSec: 0.5
   simulationSpeed: 1
   stopAction: 0
   looping: 0
@@ -5607,7 +5607,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -1226368664
+  randomSeed: -1020769451
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -9153,7 +9153,7 @@ SpriteRenderer:
   m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: c97d8087115b14146a482196fb331910, type: 3}
-  m_Color: {r: 0.8308824, g: 0.6231618, b: 0.6231618, a: 0.7058824}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.78431374}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -10010,7 +10010,7 @@ SpriteRenderer:
   m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 3070d1d25304bc247b6741a2bf959796, type: 3}
-  m_Color: {r: 0.8308824, g: 0.6231618, b: 0.6231618, a: 0.7058824}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.78431374}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -10584,7 +10584,7 @@ ParticleSystem:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 990941001}
   serializedVersion: 5
-  lengthInSec: 1
+  lengthInSec: 0.5
   simulationSpeed: 1
   stopAction: 0
   looping: 0
@@ -10637,7 +10637,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 424996960
+  randomSeed: -318608379
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -14009,7 +14009,7 @@ ParticleSystem:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 994410166}
   serializedVersion: 5
-  lengthInSec: 1
+  lengthInSec: 0.5
   simulationSpeed: 1
   stopAction: 0
   looping: 0
@@ -14062,7 +14062,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -1052847205
+  randomSeed: -276657806
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -17612,7 +17612,7 @@ ParticleSystem:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1043323469}
   serializedVersion: 5
-  lengthInSec: 1
+  lengthInSec: 0.5
   simulationSpeed: 1
   stopAction: 0
   looping: 0
@@ -17665,7 +17665,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -1052847205
+  randomSeed: 2118705749
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -21153,7 +21153,7 @@ SpriteRenderer:
   m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 3070d1d25304bc247b6741a2bf959796, type: 3}
-  m_Color: {r: 0.8308824, g: 0.6231618, b: 0.6231618, a: 0.7058824}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.78431374}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -21525,7 +21525,7 @@ SpriteRenderer:
   m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 3070d1d25304bc247b6741a2bf959796, type: 3}
-  m_Color: {r: 0.8308824, g: 0.6231618, b: 0.6231618, a: 0.7058824}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.78431374}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -21600,7 +21600,7 @@ ParticleSystem:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1109757440}
   serializedVersion: 5
-  lengthInSec: 1
+  lengthInSec: 0.5
   simulationSpeed: 1
   stopAction: 0
   looping: 0
@@ -21653,7 +21653,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 2076680830
+  randomSeed: -2010578181
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -25602,7 +25602,7 @@ SpriteRenderer:
   m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 80f98623967afbb4aa4c157e29bc1adb, type: 3}
-  m_Color: {r: 0.8308824, g: 0.6231618, b: 0.6231618, a: 0.7058824}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.78431374}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -25830,7 +25830,7 @@ ParticleSystem:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1263940643}
   serializedVersion: 5
-  lengthInSec: 1
+  lengthInSec: 0.5
   simulationSpeed: 1
   stopAction: 0
   looping: 0
@@ -25883,7 +25883,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -225597188
+  randomSeed: 1991587263
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -29541,7 +29541,7 @@ ParticleSystem:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1318976426}
   serializedVersion: 5
-  lengthInSec: 1
+  lengthInSec: 0.5
   simulationSpeed: 1
   stopAction: 0
   looping: 0
@@ -29594,7 +29594,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -91555372
+  randomSeed: -1125795887
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -32971,7 +32971,7 @@ SpriteRenderer:
   m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: c97d8087115b14146a482196fb331910, type: 3}
-  m_Color: {r: 0.8308824, g: 0.6231618, b: 0.6231618, a: 0.7058824}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.78431374}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -33032,7 +33032,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -33262,7 +33262,7 @@ ParticleSystem:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1384926338}
   serializedVersion: 5
-  lengthInSec: 1
+  lengthInSec: 0.5
   simulationSpeed: 1
   stopAction: 0
   looping: 0
@@ -33315,7 +33315,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 891929513
+  randomSeed: -471272758
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -36843,7 +36843,7 @@ ParticleSystem:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1462334333}
   serializedVersion: 5
-  lengthInSec: 1
+  lengthInSec: 0.5
   simulationSpeed: 1
   stopAction: 0
   looping: 0
@@ -40378,7 +40378,7 @@ ParticleSystem:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1483999843}
   serializedVersion: 5
-  lengthInSec: 1
+  lengthInSec: 0.5
   simulationSpeed: 1
   stopAction: 0
   looping: 0
@@ -40431,7 +40431,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -1052847205
+  randomSeed: 1634847513
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -44701,7 +44701,7 @@ SpriteRenderer:
   m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 3070d1d25304bc247b6741a2bf959796, type: 3}
-  m_Color: {r: 0.8308824, g: 0.6231618, b: 0.6231618, a: 0.7058824}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.78431374}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -44839,7 +44839,7 @@ SpriteRenderer:
   m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 80f98623967afbb4aa4c157e29bc1adb, type: 3}
-  m_Color: {r: 0.8308824, g: 0.6231618, b: 0.6231618, a: 0.7058824}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.78431374}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -45748,7 +45748,7 @@ ParticleSystem:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2014965561}
   serializedVersion: 5
-  lengthInSec: 1
+  lengthInSec: 0.5
   simulationSpeed: 1
   stopAction: 0
   looping: 0
@@ -45801,7 +45801,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -1139251077
+  randomSeed: -1584454890
   InitialModule:
     serializedVersion: 3
     enabled: 1
