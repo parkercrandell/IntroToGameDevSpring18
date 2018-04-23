@@ -53,7 +53,7 @@ public class KeyScript : MonoBehaviour {
         }
 
         //CHECKING IF KEY IS HELD
-        if (Input.GetKey(SetKey) && transform.position.y < enteranceYPos)
+        if (Input.GetKey(SetKey) && transform.position.y < enteranceYPos && transform.position.y > missYPos)
         {
 
             timer = timer + Time.deltaTime;

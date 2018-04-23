@@ -100,6 +100,9 @@ MonoBehaviour:
   health: 3
   healthText: {fileID: 0}
   ScreenText: {fileID: 0}
+  timer: 1
+  normalizeTime: 0.5
+  jiggleFactor: 0.7
 --- !u!124 &124483412545499032
 Behaviour:
   m_ObjectHideFlags: 1
